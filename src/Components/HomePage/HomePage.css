@@ -1,0 +1,85 @@
+
+:root{
+    --color-primary: rgb(255, 255, 255);
+    --color-secondary: rgb(0, 0, 0);
+    --color-thrid: rgb(34, 0, 255);
+    --color-fourd: rgb(174, 174, 174);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Navbar content*/
+nav {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 30px;
+}
+nav .mainMenu .list a {
+    font-weight: bold;
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size:20px;
+    transition: 0.2s ease;
+}
+nav .mainMenu .list a:hover {
+    color: var(--color-thrid);
+}
+nav .mainMenu .list-ghost .a {
+    font-weight: bold;
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+    transition: 0.2s ease;
+}
+
+nav .mainMenu .list-ghost .a:hover{
+    color: var(--color-secondary);
+}
+
+nav .logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color-thrid);
+    margin-left: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px rgb(171, 171, 171);
+}
+
+
+ul .list .btn-vol1 {
+    border-style: none;
+    background: var(--color-thrid);
+    border-radius: 30px;
+    color: white;
+    padding: 5px 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul .list .btn-vol1:hover{
+    border-style: none;
+    background: rgb(182, 182, 182);
+    border-radius: 30px;
+    color: white;
+    padding: 5px 24px;
+}
+
+/*container content*/
