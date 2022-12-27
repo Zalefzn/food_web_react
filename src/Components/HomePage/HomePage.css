@@ -101,6 +101,15 @@ ul .list .btn-vol1:hover{
 
 .desc{
     float: right;
-    margin-top: -19%;
-    margin-right: 450px;
+    margin-top: -20%;
+    margin-right: 300px;
+    position: relative;
+}
+#header{
+    font-size: 40px;
+    margin-bottom: .5rem;
+}
+
+#txt{
+    font-size: 30px;
 }
