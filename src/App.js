@@ -12,7 +12,9 @@ class App extends Component{
           <Fragment>
             <Routes>
               <Route path="/" element={<HomePage 
-              judul="FastFood"/>
+              judul="FastFood"
+              headerContent="Welcome"
+              image="food_order1.png"/>
               }></Route>
               <Route path="/Sign" element={<LoginPage />}></Route>
             </Routes>

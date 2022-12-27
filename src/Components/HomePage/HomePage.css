@@ -52,14 +52,14 @@ nav .mainMenu .list-ghost .a {
 }
 
 nav .mainMenu .list-ghost .a:hover{
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 nav .logo {
     font-size: 35px;
     font-weight: bold;
     color: var(--color-thrid);
-    margin-left: 30px;
+    margin-left: 60px;
     cursor: pointer;
     text-shadow: 2px 2px 5px rgb(171, 171, 171);
 }
@@ -83,3 +83,24 @@ ul .list .btn-vol1:hover{
 }
 
 /*container content*/
+.container{
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.content-image{
+    position: relative;
+    margin-left: 60px;
+}
+
+.image-vol1{
+    height: auto;
+    width: 40%;
+    margin-top: 8%;
+}
+
+.desc{
+    float: right;
+    margin-top: -19%;
+    margin-right: 450px;
+}
