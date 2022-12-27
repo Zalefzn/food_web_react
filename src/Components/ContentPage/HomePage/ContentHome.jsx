@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert";
-import ErrorPage from "../404/404";
-import "./HomePage.css";
+import ErrorPage from "../../404/404";
+import './ContentPage.css';
 
-class HomePage extends Component {
+class ContentHome extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +18,7 @@ class HomePage extends Component {
     e.preventDefault();
     Swal({
       icon: "warning",
-      title: "Are you sure you want sign in?",
+      title: "Are you sure you want Logout?",
       buttons: ["No", "Yes"],
     });
   }
@@ -35,31 +35,36 @@ class HomePage extends Component {
               </div>
               <ul class="mainMenu">
                 <li className="list">
-                  <Link to="/">Home</Link>
+                  <Link to="#">Home</Link>
+                </li>
+                <li className="list">
+                  <Link to="#">Services</Link>
+                </li>
+                <li className="list">
+                  <Link to="#">Product</Link>
                 </li>
                 <li className="list list-ghost">
                   <button className="btn-vol1" onClick={this.handlePrevent}>
                     <Link className="a" to="/Sign">
-                      Sign In
+                      Logout
                     </Link>
                   </button>
                 </li>
               </ul>
             </nav>
             {/* content fill */}
-
-            <div className="container-content">
-              <div className="content-image">
-                <img className="image-vol1" src={this.props.image} alt=""></img>
+            <div className="container-content-vol2">
+              <div className="content-image-vol2">
+                <img className="image-vol2" src={this.props.image} alt=""></img>
               </div>
-              <div className="desc">
-                <h2 id="header">{this.props.headerContent}</h2>
-                <p id="txt">
-                  We Provide Fast Food That<br></br>
-                  Can Make You Feel Delicious
+              <div className="desc-vol2">
+                <h2 id="header-vol2">{this.props.headerContent}</h2>
+                <p id="txt-vol2">
+                Here is the Best Place For<br></br>
+                You to Order Fast Food
                 </p>
-                <button className="btn-vol2" type="button" name="button">
-                  More Info
+                <button className="btn-vol3" type="button" name="button">
+                  Order Now
                 </button>
               </div>
             </div>
@@ -75,4 +80,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default ContentHome;

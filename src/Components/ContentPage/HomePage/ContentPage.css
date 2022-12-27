@@ -83,39 +83,39 @@ ul .list .btn-vol1:hover{
 }
 
 /*container content*/
-.container-content{
+.container-content-vol2{
     justify-content: space-between;
     justify-items: center;
 }
 
-.content-image{
+.content-image-vol2{
     position: relative;
     margin-left: 60px;
 }
 
-.image-vol1{
+.image-vol2{
     height: auto;
     width: 40%;
     margin-top: 8%;
 }
 
-.desc{
+.desc-vol2{
     float: right;
     margin-top: -21%;
     margin-right: 300px;
     position: relative;
 }
-#header{
+#header-vol2{
     font-size: 40px;
     margin-bottom: .5rem;
 }
 
-#txt{
+#txt-vol2{
     font-size: 30px;
     margin-bottom: .7rem;
 }
 
-.btn-vol2{
+.btn-vol3{
     font-size: 20px;
     font-weight: bold;
     border-style: none;
@@ -126,7 +126,7 @@ ul .list .btn-vol1:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn-vol2:hover{
+.btn-vol3:hover{
     font-size: 20px;
     font-weight: bold;
     border-style: none;

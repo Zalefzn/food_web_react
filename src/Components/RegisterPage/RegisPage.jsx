@@ -1,40 +1,18 @@
 import React from "react";
-import "./LoginPage.css";
+import "./RegisterPage.css";
 import swal from "sweetalert";
 import { Fragment } from "react";
 import {Link} from 'react-router-dom';
 
-function LoginPage() {
-
-    function hiddenEye(){
-        const showHiddenPass = (inputPass,inputIcon) => {
-            const input = document.getElementById(inputPass),
-                    iconEye = document.getElementById(inputIcon)
-        
-                    iconEye.addEventListener('click', () => {
-                        if(input.type === 'password'){
-                            input.type='text';
-                            iconEye.classList.add('ri-eye-line');
-                            iconEye.classList.remove('ri-eye-off-line');
-                        }else{
-                            input.type = 'password';
-                            iconEye.classList.remove('ri-eye-line');
-                            iconEye.classList.add('ri-eye-off-line');
-                        }
-                    })
-        }
-        
-        showHiddenPass('input-pass', 'input-icon');
-    }
+function RegisterPage() {
 
     function handlePrevent(e){
         e.preventDefault();
         swal({
             icon: "success",
-            title: "Login Success",
+            title: "Register Success",
           });
     }
-
   return (
     <Fragment>
       <div className="container">
@@ -55,6 +33,18 @@ function LoginPage() {
 
             <div>
               <div className="login-inputs">
+                <div>
+                  <label for="" className="login-label">
+                    Username
+                  </label>
+                  <input
+                    type="username"
+                    placeholder="Enter Your Username"
+                    required
+                    className="login-input"
+                  ></input>
+                  {/* <input type="email" placeholder="Enter Your Email Address" required className="login-input"> */}
+                </div>
                 <div>
                   <label for="" className="login-label">
                     Email
@@ -87,30 +77,16 @@ function LoginPage() {
                   </div>
                 </div>
               </div>
-              <div className="login-check">
-                <input type="checkbox" className="login-check-input"></input>
-                {/* <input type="checkbox" className="login-check-input"> */}
-                <label for="" className="login-check-label">
-                  Remember me
-                </label>
-              </div>
             </div>
 
             <div>
               <div className="login-buttons">
                 <button className="login-button" onClick={handlePrevent}>
-                 <Link to="/ContentHome">Login</Link>
-                </button>
-                <button className="login-button login-button-ghost">
-                  <Link to="/Regis"
-                    className="a-vol2"
-                    >
-                    Sign Up
-                  </Link>
+                 <Link to="/ContentHome">Register</Link>
                 </button>
               </div>
-              <Link to="/Regis" className="login-forget">
-                Don't Have Account?
+              <Link to="/Sign" className="login-forget">
+                You Have Account?
               </Link>
             </div>
           </form>
@@ -120,4 +96,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default RegisterPage;
