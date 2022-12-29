@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert";
 import ErrorPage from "../../404/404";
+import ServicePage from "../ServicesPage/ServicePage";
 import './ContentPage.css';
 
 class ContentHome extends Component {
@@ -68,13 +69,17 @@ class ContentHome extends Component {
                 </button>
               </div>
             </div>
+            <ServicePage 
+            header_content_vol1 = 'Fast Food'
+            header_content_vol2 = 'Free Delivery'
+            header_content_vol3 = 'Cash Back 50%'
+            />
           </Fragment>
         ) : (
           <div>
             <ErrorPage />
           </div>
         )}
-        );
       </div>
     );
   }

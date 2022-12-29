@@ -5,11 +5,17 @@ import { Fragment } from "react";
 import {Link} from 'react-router-dom';
 
 function LoginPage() {
+    
+    function handlePrevent(e){
+        e.preventDefault();
+        swal({
+            icon: "success",
+            title: "Login Success",
+          });
 
-    function hiddenEye(){
-        const showHiddenPass = (inputPass,inputIcon) => {
-            const input = document.getElementById(inputPass),
-                    iconEye = document.getElementById(inputIcon)
+          const showHiddenPass = (inputPass,inputIcon) => {
+            const input = document.getElementById(inputPass);
+                  const iconEye = document.getElementById(inputIcon);
         
                     iconEye.addEventListener('click', () => {
                         if(input.type === 'password'){
@@ -21,18 +27,20 @@ function LoginPage() {
                             iconEye.classList.remove('ri-eye-line');
                             iconEye.classList.add('ri-eye-off-line');
                         }
-                    })
+                    });
         }
         
-        showHiddenPass('input-pass', 'input-icon');
-    }
+        showHiddenPass("input-pass", "input-icon");
 
-    function handlePrevent(e){
-        e.preventDefault();
-        swal({
-            icon: "success",
-            title: "Login Success",
-          });
+
+        const getDataClass = document.querySelector('label#email');
+        getDataClass.addEventListener('click',() => {
+          setTimeout(() =>{
+            getDataClass.style.color="blue";
+        },2000);
+          
+        })
+        
     }
 
   return (
@@ -56,7 +64,7 @@ function LoginPage() {
             <div>
               <div className="login-inputs">
                 <div>
-                  <label for="" className="login-label">
+                  <label for="" className="login-label" id="email">
                     Email
                   </label>
                   <input
