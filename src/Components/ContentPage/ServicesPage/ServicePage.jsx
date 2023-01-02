@@ -8,15 +8,20 @@ class ServicePage extends Component {
     this.state = {
         showContent: true,
         image: 'food_order5.png',
+        get: [],
     };
   }
 
   componentDidMount(){
     console.info('ComponentDidMount');
     axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast').then(function(response){
-      console.info(response);
+      this.setState ({
+        get: response,
+      });
     }).catch(function(error){
-      console.info(error);
+     this.setState({
+      get: error,
+     });
     });
     //  fetch('http://www.omdbapi.com/?apikey=dca61bcc&s=avengers')
     // .then(response =>  response.json())
@@ -71,7 +76,6 @@ class ServicePage extends Component {
                   or Not Good Enough For the<br></br>
                   Customers
                 </p>
-              
               </div>
             </div>
           </div>

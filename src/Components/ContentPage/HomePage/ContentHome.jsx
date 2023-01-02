@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert";
 import ErrorPage from "../../404/404";
+import ProductPage from "../ProductPage/ProductPage";
 import ServicePage from "../ServicesPage/ServicePage";
 import './ContentPage.css';
 
@@ -74,6 +75,7 @@ class ContentHome extends Component {
             header_content_vol2 = 'Free Delivery'
             header_content_vol3 = 'Cash Back 50%'
             />
+            <ProductPage />
           </Fragment>
         ) : (
           <div>
