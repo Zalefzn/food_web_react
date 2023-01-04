@@ -31,7 +31,7 @@ class HomePage extends Component {
             {/* navbar content */}
             <nav>
               <div class="logo">
-                <p>{this.props.judul}</p>
+                <p className="logo-merk">{this.props.judul}</p>
               </div>
               <ul class="mainMenu">
                 <li className="list">
@@ -69,7 +69,6 @@ class HomePage extends Component {
             <ErrorPage />
           </div>
         )}
-        );
       </div>
     );
   }

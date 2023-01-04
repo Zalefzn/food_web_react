@@ -121,6 +121,15 @@ ul .list .btn-vol1:hover{
     font-size: 30px;
     margin-bottom: .7rem;
 }
+.a-btn{
+    color: white;
+    text-decoration: none;
+}
+
+.a-btn:hover{
+    color: white;
+    text-decoration: none;
+}
 
 .btn-vol3{
     font-size: 20px;

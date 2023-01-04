@@ -33,7 +33,7 @@ class ContentHome extends Component {
             {/* navbar content */}
             <nav>
               <div class="logo">
-                <p>{this.props.judul}</p>
+                <p className="logo-content">{this.props.judul}</p>
               </div>
               <ul class="mainMenu">
                 <li className="list">
@@ -66,7 +66,7 @@ class ContentHome extends Component {
                   You to Order Fast Food
                 </p>
                 <button className="btn-vol3" type="button" name="button">
-                  <Link to="/OrderPage"> Order Now</Link>
+                  <Link  className="a-btn"to="/OrderPage"> Order Now</Link>
                 </button>
               </div>
             </div>

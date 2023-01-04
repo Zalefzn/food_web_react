@@ -1,0 +1,13 @@
+:root{
+    --color-primary: rgb(255, 255, 255);
+    --color-secondary: rgb(0, 0, 0);
+    --color-thrid: rgb(34, 0, 255);
+    --color-fourd: rgb(174, 174, 174);
+}
+
+.category-active{
+    background-color: var(--color-thrid);
+    color: var(--color-primary);
+    font-weight: bold;
+    border-radius: 30px;
+}

@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
 import "./OrderPage.css";
-import ErrorPage from "../404/404";
-import Swal from "sweetalert";
+import ErrorPage from "../../404/404";
+import swal from 'sweetalert';
 import { Link } from "react-router-dom";
+
 
 class OrderPage extends Component {
   constructor(props) {
@@ -11,13 +12,15 @@ class OrderPage extends Component {
       title: "",
       status: true,
     };
+    this.handleData = this.handleData.bind(this);
   }
 
-  handlePrevent(e) {
+
+  handleData(e) {
     e.preventDefault();
-    Swal({
-      icon: "Warning",
-      title: "Are you sure want close?",
+    swal({
+     icon: 'warning',
+      title: "Are you sure you want close?",
       buttons: ["No", "Yes"],
     });
   }
@@ -29,21 +32,21 @@ class OrderPage extends Component {
           <Fragment>
             <nav>
               <div className="logo-orderPage">
-                <p>FastFood</p>
+                <p className="logo-content">FastFood</p>
               </div>
               <ul className="mainMenu-order">
                 <li className="list-order">
                   <Link to="#">Order Page</Link>
                 </li>
                 <li className="list-order list-ghost-order">
-                  <button className="btn-vol1" onClick={this.handlePrevent}>
+                  <button className="btn-vol1" onClick={this.handleData}>
                     <Link className="a" to="/ContentHome">
                       Close
                     </Link>
                   </button>
                 </li>
               </ul>
-            </nav>
+            </nav>         
           </Fragment>
         ) : (
           <div>
