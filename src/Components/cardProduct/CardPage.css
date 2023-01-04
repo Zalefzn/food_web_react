@@ -52,8 +52,11 @@ img{
     font-weight: bold;
 }
 
+.product-button{
+    margin-top: -30px;
+}
 .button-product{
-    margin: 20px;
+    margin: 20px ;
     border-style: none;
     font-weight: bold;
     background: rgb(34, 0, 255);
@@ -64,7 +67,6 @@ img{
 }
 
 .button-product:hover{
-    margin: 20px;
     border-style: none;
     font-weight: bold;
     background: rgb(157, 157, 157);
