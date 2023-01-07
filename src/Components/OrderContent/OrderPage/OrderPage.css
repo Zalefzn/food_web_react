@@ -54,7 +54,7 @@ nav .mainMenu-order .list-ghost-order .a:hover{
     color: var(--color-primary);
 }
 
-nav .logo-orderPage {
+nav .logo-orderPage .logo-content{
     font-size: 35px;
     font-weight: bold;
     color: var(--color-thrid);

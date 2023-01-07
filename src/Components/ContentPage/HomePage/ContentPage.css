@@ -55,7 +55,7 @@ nav .mainMenu .list-ghost .a:hover{
     color: var(--color-primary);
 }
 
-nav .logo {
+nav .logo .logo-content{
     font-size: 35px;
     font-weight: bold;
     color: var(--color-thrid);

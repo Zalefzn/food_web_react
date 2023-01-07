@@ -1,0 +1,46 @@
+.payment-content{
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 18%;
+}
+
+.payment-judul{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.payment-btn{
+    margin-top: 10px;
+    padding: 8px 80px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: rgb(22, 22, 255);
+}
+
+.payment-btn:hover{
+    margin-top: 10px;
+    padding: 8px 80px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: rgb(148, 148, 148);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.pay-img{
+    height: 180px;
+    width: 180px;
+}

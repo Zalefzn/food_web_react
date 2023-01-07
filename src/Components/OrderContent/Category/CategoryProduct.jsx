@@ -31,7 +31,7 @@ class CategoryProduct extends Component {
         <h5>
           <strong>Category Product</strong>
         </h5>
-        <hr />
+        <br></br>
         <ListGroup mt="2">
           {categories &&
             categories.map((categ) => (

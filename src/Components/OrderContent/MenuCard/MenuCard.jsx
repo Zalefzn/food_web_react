@@ -3,10 +3,12 @@ import { Card, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { numberWithComas } from "../../../Api/utils";
 
-function MenuCard({ menu }) {
+function MenuCard({ menu, chart }) {
   return (
     <Col md={4} mt="2" xs={6} className="mb-4">
-      <Card className="shadow"style={{ width: "18rem" }}>
+      <Card onClick={()=>{
+        chart(menu);
+      }}className="shadow"style={{ width: "18rem" }}>
         <Card.Img
           variant="top"
           src={

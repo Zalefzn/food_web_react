@@ -7,6 +7,7 @@ import ServicePage from './Components/ContentPage/ServicesPage/ServicePage';
 import HomePage from './Components/HomePage/HomePage';
 import LoginPage from './Components/LoginPage/LoginPage';
 import MenuContent from './Components/MenuContent/MenuContent';
+import Payment from './Components/Payment/Payment';
 import RegisPage from './Components/RegisterPage/RegisPage';
 
 
@@ -31,6 +32,7 @@ class App extends Component{
               <Route path="/Services" element={<ServicePage />}></Route>
               <Route path="/Product" element={<ProductPage />}></Route>
               <Route path="/OrderPage" element={<MenuContent />}></Route>
+              <Route path="/Payment" element={<Payment />}></Route>
             </Routes>
           </Fragment>
       </Router>
