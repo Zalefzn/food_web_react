@@ -59,7 +59,7 @@ class Kasir extends Component {
     this.handleClose();
 
     const data = {
-      total: this.state.total,
+      total: this.state.total,  
       total_harga: this.state.total_harga,
       proucts: this.state.kasirDetail.product,
       keterangan: this.state.descript,
